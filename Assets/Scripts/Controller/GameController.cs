@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
 
     public void endGame()
     {
+         Main.BackToHome();
         Time.timeScale = 0f;
     }
 

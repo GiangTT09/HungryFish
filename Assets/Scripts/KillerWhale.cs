@@ -6,16 +6,17 @@ public class KillerWhale : MonoBehaviour
 {
 
     float normalSpeed = 1f;
-    float runSpeed = 3f;
-    float increaseHealth = 20f;
-    float increaseScore = 20f;
+    float runSpeed = 5f;
+    float increaseHealth = 20;
+    float increaseScore = 20;
     float increaseExp = 20f;
-    public float hp=50f;
+    public float hp=50;
     public float damage = 10f;
     Vector2 direction;
 bool facingRight ;
     Timer timer;
     // Start is called before the first frame update
+    public AudioSource audio;
     void Start()
     {
         timer = gameObject.AddComponent<Timer>();
@@ -24,7 +25,13 @@ bool facingRight ;
         timer.Duration = 5f;
         timer.Run();
         direction = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+         audio = GetComponent<AudioSource>();
         
+    }
+    
+    public void playAudio()
+    {
+        audio.Play();
     }
 
     // Update is called once per frame

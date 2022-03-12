@@ -21,6 +21,7 @@ public class whalemouth : MonoBehaviour
         if (hitInfo.gameObject.tag == "SharkMounth")
         {
             
+            CharacterController.CharacterSingleton.playAudio();
             transform.parent.gameObject.GetComponent<KillerWhale>().hp-= CharacterController.CharacterSingleton.damage*.5f;
             CharacterController.CharacterSingleton.decreaseHealth(transform.parent.gameObject.GetComponent<KillerWhale>().damage*.5f);
          
@@ -28,7 +29,7 @@ public class whalemouth : MonoBehaviour
         if (hitInfo.gameObject.tag == "SharkBody")
         {
             
-            
+              CharacterController.CharacterSingleton.playAudio();
             CharacterController.CharacterSingleton.decreaseHealth(transform.parent.gameObject.GetComponent<KillerWhale>().damage);
             
         }

@@ -20,7 +20,7 @@ public class whalebody : MonoBehaviour
         
         if (hitInfo.gameObject.tag == "SharkMounth")
         {
-            
+              CharacterController.CharacterSingleton.playAudio();
             transform.parent.gameObject.GetComponent<KillerWhale>().hp-= CharacterController.CharacterSingleton.damage;
           
          

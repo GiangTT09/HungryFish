@@ -43,7 +43,7 @@ public class Main : SingletonBehaviour<Main>
     }
 
     static List<string> _boughtAccessory;
-    // getter c?a các ph? ki?n ?ã mua
+    // getter c?a cï¿½c ph? ki?n ?ï¿½ mua
     public static List<string> boughtAccessory
     {
         get => _boughtAccessory;
@@ -93,7 +93,7 @@ public class Main : SingletonBehaviour<Main>
     }
 
 
-    public void BackToHome()
+    public static void BackToHome()
     {
         SceneManager.LoadScene("HomeScene");
     }

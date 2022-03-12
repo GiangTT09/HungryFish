@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7949866862692176539}
   m_Layer: 0
   m_Name: SharkBody
-  m_TagString: SharkMounth
+  m_TagString: SharkBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,10 +128,10 @@ EdgeCollider2D:
   - {x: -1.2559303, y: 0.5438101}
   - {x: -0.6720895, y: 0.2393822}
   - {x: -0.12107847, y: 0.14745781}
-  - {x: 0.42811784, y: 0.029790962}
-  - {x: 0.37521347, y: -0.089288376}
-  - {x: 0.28847456, y: -0.15062639}
-  - {x: 0.048810896, y: -0.2882132}
+  - {x: -0.29931703, y: -0.10889586}
+  - {x: -0.2678813, y: -0.22797519}
+  - {x: -0.25973713, y: -0.16911796}
+  - {x: -0.22529536, y: -0.30670476}
   - {x: -0.20873359, y: -0.31586707}
   - {x: -0.6921986, y: -0.53316355}
   - {x: -2.4154725, y: -0.18606663}
@@ -531,6 +531,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  damage: 4
 --- !u!50 &7969430244162756732
 Rigidbody2D:
   serializedVersion: 4

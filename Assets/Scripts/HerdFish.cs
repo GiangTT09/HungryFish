@@ -54,8 +54,9 @@ public class HerdFish : AbstractSmallFish
 
     public override void Update()
     {
+       
         if (active == 0)
-        {
+        {   direction=groupDirection;
             if (base.GetDistanceWithPlayer() < 6)
             {
                 Run();
